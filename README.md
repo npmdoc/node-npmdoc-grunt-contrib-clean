@@ -1,11 +1,13 @@
-# api documentation for  [grunt-contrib-clean (v1.0.0)](https://github.com/gruntjs/grunt-contrib-clean)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-clean.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-clean)
+# api documentation for  [grunt-contrib-clean (v1.0.0)](https://github.com/gruntjs/grunt-contrib-clean)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-contrib-clean.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-contrib-clean) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-clean.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-clean)
 #### Clean files and folders
 
 [![NPM](https://nodei.co/npm/grunt-contrib-clean.png?downloads=true)](https://www.npmjs.com/package/grunt-contrib-clean)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-grunt_contrib_clean_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-grunt-contrib-clean_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
