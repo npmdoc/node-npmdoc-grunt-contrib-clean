@@ -49,9 +49,9 @@
 <h1>api documentation for
     <a
 
-        href="https://github.com/gruntjs/grunt-contrib-clean"
+        href="https://github.com/gruntjs/grunt-contrib-clean#readme"
 
-    >grunt-contrib-clean (v1.0.0)</a>
+    >grunt-contrib-clean (v1.1.0)</a>
 </h1>
 <h4>Clean files and folders</h4>
 <div class="apidocSectionDiv"><a
@@ -61,12 +61,87 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-contrib-clean">module grunt-contrib-clean</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.grunt-contrib-clean.grunt-contrib-clean">
+            function <span class="apidocSignatureSpan"></span>grunt-contrib-clean
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.grunt-contrib-clean" id="apidoc.module.grunt-contrib-clean">module grunt-contrib-clean</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.grunt-contrib-clean.grunt-contrib-clean" id="apidoc.element.grunt-contrib-clean.grunt-contrib-clean">
+        function <span class="apidocSignatureSpan"></span>grunt-contrib-clean
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">grunt-contrib-clean = function (grunt) {
+
+  function clean(filepath, options, done) {
+    if (!grunt.file.exists(filepath)) {
+      return done();
+    }
+
+    // Only delete cwd or outside cwd if --force enabled. Be careful, people!
+    if (!options.force) {
+      if (grunt.file.isPathCwd(filepath)) {
+        grunt.verbose.error();
+        grunt.fail.warn(&#x27;Cannot delete the current working directory.&#x27;);
+        return done();
+      } else if (!grunt.file.isPathInCwd(filepath)) {
+        grunt.verbose.error();
+        grunt.fail.warn(&#x27;Cannot delete files outside the current working directory.&#x27;);
+        return done();
+      }
+    }
+
+    grunt.verbose.writeln((options[&#x27;no-write&#x27;] ? &#x27;Not actually cleaning &#x27; : &#x27;Cleaning &#x27;) + filepath + &#x27;...&#x27;);
+    // Actually delete. Or not.
+    if (options[&#x27;no-write&#x27;]) {
+      return done();
+    }
+    rimraf(filepath, function (err) {
+      if (err) {
+        grunt.log.error();
+        grunt.fail.warn(&#x27;Unable to delete &#x22;&#x27; + filepath + &#x27;&#x22; file (&#x27; + err.message + &#x27;).&#x27;, err);
+      }
+      done();
+    });
+  }
+
+  grunt.registerMultiTask(&#x27;clean&#x27;, &#x27;Clean files and folders.&#x27;, function() {
+    // Merge task-specific and/or target-specific options with these defaults.
+    var options = this.options({
+      force: grunt.option(&#x27;force&#x27;) === true,
+      &#x27;no-write&#x27;: grunt.option(&#x27;no-write&#x27;) === true
+    });
+
+    var done = this.async();
+
+    // Clean specified files / dirs.
+    var files = this.filesSrc;
+    async.eachSeries(files, function (filepath, cb) {
+      clean(filepath, options, cb);
+    }, function (err) {
+      grunt.log.ok(files.length + &#x27; &#x27; + grunt.util.pluralize(files.length, &#x27;path/paths&#x27;) + &#x27; cleaned.&#x27;);
+      done(err);
+    });
+  });
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 

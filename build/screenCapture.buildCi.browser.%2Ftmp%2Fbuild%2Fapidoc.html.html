@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/gruntjs/grunt-contrib-clean#readme"
-
-    >grunt-contrib-clean (v1.1.0)</a>
+    <a href="https://github.com/gruntjs/grunt-contrib-clean#readme">grunt-contrib-clean (v1.1.0)</a>
 </h1>
 <h4>Clean files and folders</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-contrib-clean">module grunt-contrib-clean</a><ol>
 
@@ -96,34 +89,34 @@
     if (!options.force) {
       if (grunt.file.isPathCwd(filepath)) {
         grunt.verbose.error();
-        grunt.fail.warn(&#x27;Cannot delete the current working directory.&#x27;);
+        grunt.fail.warn('Cannot delete the current working directory.');
         return done();
       } else if (!grunt.file.isPathInCwd(filepath)) {
         grunt.verbose.error();
-        grunt.fail.warn(&#x27;Cannot delete files outside the current working directory.&#x27;);
+        grunt.fail.warn('Cannot delete files outside the current working directory.');
         return done();
       }
     }
 
-    grunt.verbose.writeln((options[&#x27;no-write&#x27;] ? &#x27;Not actually cleaning &#x27; : &#x27;Cleaning &#x27;) + filepath + &#x27;...&#x27;);
+    grunt.verbose.writeln((options['no-write'] ? 'Not actually cleaning ' : 'Cleaning ') + filepath + '...');
     // Actually delete. Or not.
-    if (options[&#x27;no-write&#x27;]) {
+    if (options['no-write']) {
       return done();
     }
     rimraf(filepath, function (err) {
       if (err) {
         grunt.log.error();
-        grunt.fail.warn(&#x27;Unable to delete &#x22;&#x27; + filepath + &#x27;&#x22; file (&#x27; + err.message + &#x27;).&#x27;, err);
+        grunt.fail.warn('Unable to delete "' + filepath + '" file (' + err.message + ').', err);
       }
       done();
     });
   }
 
-  grunt.registerMultiTask(&#x27;clean&#x27;, &#x27;Clean files and folders.&#x27;, function() {
+  grunt.registerMultiTask('clean', 'Clean files and folders.', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      force: grunt.option(&#x27;force&#x27;) === true,
-      &#x27;no-write&#x27;: grunt.option(&#x27;no-write&#x27;) === true
+      force: grunt.option('force') === true,
+      'no-write': grunt.option('no-write') === true
     });
 
     var done = this.async();
@@ -133,7 +126,7 @@
     async.eachSeries(files, function (filepath, cb) {
       clean(filepath, options, cb);
     }, function (err) {
-      grunt.log.ok(files.length + &#x27; &#x27; + grunt.util.pluralize(files.length, &#x27;path/paths&#x27;) + &#x27; cleaned.&#x27;);
+      grunt.log.ok(files.length + ' ' + grunt.util.pluralize(files.length, 'path/paths') + ' cleaned.');
       done(err);
     });
   });
@@ -151,3 +144,4 @@
     ]
 </div>
 </div>
+</body></html>
