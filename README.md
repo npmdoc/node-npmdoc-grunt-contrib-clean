@@ -1,9 +1,14 @@
-# api documentation for  [grunt-contrib-clean (v1.0.0)](https://github.com/gruntjs/grunt-contrib-clean)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-contrib-clean.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-contrib-clean) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-clean.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-clean)
+# npmdoc-grunt-contrib-clean
+
+#### api documentation for  [grunt-contrib-clean (v1.1.0)](https://github.com/gruntjs/grunt-contrib-clean#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-contrib-clean.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-contrib-clean) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-clean.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-contrib-clean)
+
 #### Clean files and folders
 
-[![NPM](https://nodei.co/npm/grunt-contrib-clean.png?downloads=true)](https://www.npmjs.com/package/grunt-contrib-clean)
+[![NPM](https://nodei.co/npm/grunt-contrib-clean.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-contrib-clean)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-grunt-contrib-clean_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-grunt-contrib-clean/build/screenCapture.npmPackageListing.svg)
 
@@ -57,16 +62,15 @@
     "description": "Clean files and folders",
     "devDependencies": {
         "dir-compare": "0.0.2",
-        "grunt": "^0.4.5",
-        "grunt-cli": "^0.1.13",
-        "grunt-contrib-internal": "^0.4.10",
-        "grunt-contrib-jshint": "^0.12.0",
-        "grunt-contrib-nodeunit": "^0.4.1"
+        "grunt": "^1.0.0",
+        "grunt-contrib-internal": "^1.0.0",
+        "grunt-contrib-jshint": "^1.0.0",
+        "grunt-contrib-nodeunit": "^1.0.0"
     },
     "directories": {},
     "dist": {
-        "shasum": "6b2ed94117e2c7ffe32ee04578c96fe4625a9b6d",
-        "tarball": "https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-1.0.0.tgz"
+        "shasum": "564abf2d0378a983a15b9e3f30ee75b738c40638",
+        "tarball": "https://registry.npmjs.org/grunt-contrib-clean/-/grunt-contrib-clean-1.1.0.tgz"
     },
     "engines": {
         "node": ">= 0.10.0"
@@ -74,8 +78,8 @@
     "files": [
         "tasks"
     ],
-    "gitHead": "af104010d9e35bc53635cd0bdec16791e009e530",
-    "homepage": "https://github.com/gruntjs/grunt-contrib-clean",
+    "gitHead": "d1cd6cab180cd5e4862661e35a87fff8e77cdba6",
+    "homepage": "https://github.com/gruntjs/grunt-contrib-clean#readme",
     "keywords": [
         "gruntplugin",
         "clean",
@@ -91,36 +95,29 @@
     "main": "tasks/clean.js",
     "maintainers": [
         {
-            "name": "tkellen",
-            "email": "tyler@sleekcode.net"
+            "name": "tkellen"
         },
         {
-            "name": "cowboy",
-            "email": "cowboy@rj3.net"
+            "name": "cowboy"
         },
         {
-            "name": "shama",
-            "email": "kyle@dontkry.com"
+            "name": "shama"
         },
         {
-            "name": "vladikoff",
-            "email": "vlad@vladikoff.com"
+            "name": "vladikoff"
         },
         {
-            "name": "sindresorhus",
-            "email": "sindresorhus@gmail.com"
+            "name": "sindresorhus"
         },
         {
-            "name": "jmeas",
-            "email": "jellyes2@gmail.com"
+            "name": "jmeas"
         }
     ],
     "name": "grunt-contrib-clean",
     "optionalDependencies": {},
     "peerDependencies": {
-        "grunt": ">= 0.4.5"
+        "grunt": ">=0.4.5"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gruntjs/grunt-contrib-clean.git"
@@ -128,19 +125,10 @@
     "scripts": {
         "test": "grunt test"
     },
-    "version": "1.0.0"
+    "version": "1.1.0",
+    "bin": {}
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module grunt-contrib-clean](#apidoc.module.grunt-contrib-clean)
-
-
-
-# <a name="apidoc.module.grunt-contrib-clean"></a>[module grunt-contrib-clean](#apidoc.module.grunt-contrib-clean)
 
 
 
